@@ -4,7 +4,10 @@
   {{ if eq .Site.Params.env "development" }}
     <script src="http://localhost:5678/livereload.js"></script>
   {{ end }}
+  <!-- at the end of your page insert the following line -->
+  <script src="https://unpkg.com/datocms-search@0.1.8/dist/datocms-search.base.js"></script>
+  <!-- at the end of your page insert the following line -->
+  <!-- la ligne qui suit pourrauit être juste dans la page affichant les résultats de recherche -->
+  <script src="https://unpkg.com/datocms-search@0.1.8/dist/datocms-search.widget.js"></script>
   </body>
 </html>
-
-

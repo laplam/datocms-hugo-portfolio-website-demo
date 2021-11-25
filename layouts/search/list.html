@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+
+<div id="search-container"></div>
+  <script src="https://unpkg.com/datocms-search@0.1.8/dist/datocms-search.widget.js"></script>
+  <script>
+    var client = new DatoCmsSearch("<YOUR_API_TOKEN>", "<BUILD_TRIGGER_ID>");
+    client.addWidget("#search-container");
+  </script>
+
+{{ partial "footer.html" . }}

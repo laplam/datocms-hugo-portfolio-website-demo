@@ -13,6 +13,9 @@
     {{ else }}
       {{ .Site.Data.settings.seoMetaTags | safeHTML }}
     {{ end }}
+    <!-- Ajout site search tutoriel officiel DATO -->
+    <!-- ??? la ligne qui suit pourrauit être juste dans la page affichant les résultats de recherche -->
+    <link rel="stylesheet" href="https://unpkg.com/datocms-search@0.1.8/styles/index.css" />
   </head>
   <body>
     <div class="container">
